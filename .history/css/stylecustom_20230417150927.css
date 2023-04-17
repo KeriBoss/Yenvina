@@ -1,0 +1,34 @@
+:root{
+    --bg-main: #1e3d37;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    background: var(--bg-main);
+    z-index: 99999999;
+}
+header .logo img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+header .search form {
+    text-align: center;
+    position: relative;
+}
+header .search form input[type=search]{
+    width: 80%;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+}
+header .search form button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%,0%);
+    height: 40px;
+    border: none;
+}
