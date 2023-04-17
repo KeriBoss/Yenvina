@@ -168,9 +168,6 @@ header .header-top .menu-bar{
     header .header-top .col-lg-1 {
         width: 7.33333%;
     }
-    header .nav-bar{
-        display: none;
-    }
 }
 @media (max-width: 768px) {
     header .header-top .menu-bar{
