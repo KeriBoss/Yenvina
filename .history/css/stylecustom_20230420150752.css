@@ -890,9 +890,6 @@ footer .footer-bottom .footer-wp a {
     display: -webkit-box;
     -webkit-box-orient: vertical;
 }
-.newsletter-slider .content .note .icon-gift span i{
-    color: var(--red);
-}
 
 /*Newsletter end*/
 
@@ -2045,8 +2042,8 @@ footer .footer-bottom .footer-wp a {
 .article-footer p a:last-child::after{
     content: '.';
 }
-.article-footer ul{
-    font-size: .8em;
+.article-footer p ul li{
+    font-size: .9em;
 }
 .routing a{
     font-size: 1.2em;

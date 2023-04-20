@@ -851,7 +851,7 @@ footer .footer-bottom .footer-wp a {
 
 .blogs.splide__slide,
 .newsletter .newsletter-slider .splide__list .splide__slide {
-    border: 1px solid var(--bg-note);
+    border: 1px solid var(--bg-btn);
     background: var(--white);
 
 }
@@ -889,9 +889,6 @@ footer .footer-bottom .footer-wp a {
     -webkit-line-clamp: 3;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-}
-.newsletter-slider .content .note .icon-gift span i{
-    color: var(--red);
 }
 
 /*Newsletter end*/
@@ -2016,39 +2013,4 @@ footer .footer-bottom .footer-wp a {
 }
 .article p{
     font-size: .9em;
-}
-.article p b{
-    color: var(--tx-note);
-}
-.article p.caption{
-    color: var(--gray);
-    font-size: .8em;
-}
-
-.line-top{
-    width: 280px;
-    height: 4px;
-    border-bottom: 3px var(--black) dashed;
-    margin: 20px 0;
-}
-.article-footer p span{
-    color: var(--tx-note);
-}
-.article-footer p a{
-    color: var(--gray);
-    font-style: italic;
-}
-.article-footer p a::after{
-    content: ',';
-    margin-right: 2px;
-}
-.article-footer p a:last-child::after{
-    content: '.';
-}
-.article-footer ul{
-    font-size: .8em;
-}
-.routing a{
-    font-size: 1.2em;
-    font-weight: 600;
 }

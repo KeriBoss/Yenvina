@@ -890,7 +890,7 @@ footer .footer-bottom .footer-wp a {
     display: -webkit-box;
     -webkit-box-orient: vertical;
 }
-.newsletter-slider .content .note .icon-gift span i{
+.newsletter-slider .content .note .icon-gift i{
     color: var(--red);
 }
 

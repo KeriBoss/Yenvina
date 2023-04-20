@@ -851,7 +851,7 @@ footer .footer-bottom .footer-wp a {
 
 .blogs.splide__slide,
 .newsletter .newsletter-slider .splide__list .splide__slide {
-    border: 1px solid var(--bg-note);
+    border: 1px solid var(--bg-btn);
     background: var(--white);
 
 }
@@ -889,9 +889,6 @@ footer .footer-bottom .footer-wp a {
     -webkit-line-clamp: 3;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-}
-.newsletter-slider .content .note .icon-gift span i{
-    color: var(--red);
 }
 
 /*Newsletter end*/
@@ -2042,13 +2039,6 @@ footer .footer-bottom .footer-wp a {
     content: ',';
     margin-right: 2px;
 }
-.article-footer p a:last-child::after{
-    content: '.';
-}
-.article-footer ul{
-    font-size: .8em;
-}
-.routing a{
-    font-size: 1.2em;
-    font-weight: 600;
+.article-footer p a::after:last-child{
+    content: '';
 }
