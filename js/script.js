@@ -1,3 +1,41 @@
+const btnFilter = document.querySelector('.btn-filter');
+const ctnFilter = document.querySelector('.filter-content');
+let temp;
+if(ctnFilter){
+    temp = ctnFilter.innerHTML;
+    ctnFilter.innerHTML = '';
+}
+
+if(btnFilter){
+    btnFilter.addEventListener('click', function(e){
+        ctnFilter.classList.toggle('active');
+        ctnFilter.classList.toggle('box');
+        if(ctnFilter.classList.contains('active')){
+            ctnFilter.innerHTML = temp;
+        }
+        else{
+            ctnFilter.innerHTML = '';
+        }
+    })
+}
+
+//QUantity
+const range = document.querySelectorAll('.range');
+
+range.forEach(item => {
+    let btnLowest = item.querySelector('.lowest_quan');
+    let btnHighest = item.querySelector('.highest_quan');
+    let btnMain_quan = item.querySelector('.main_quan');
+    
+    btnLowest.addEventListener('click', function(event){
+        if(btnMain_quan.value > 0){
+            btnMain_quan.value = btnMain_quan.value*1 - 1;
+        }
+    })
+    btnHighest.addEventListener('click', function(){
+        btnMain_quan.value = btnMain_quan.value*1 + 1;
+    })
+})
 
 
 //Times delay
@@ -30,23 +68,4 @@ let dateSale = setInterval(()=>{
 
 
 //Show hide filter on Product page
-const btnFilter = document.querySelector('.btn-filter');
-const ctnFilter = document.querySelector('.filter-content');
-let temp;
-if(ctnFilter){
-    temp = ctnFilter.innerHTML;
-    ctnFilter.innerHTML = '';
-}
 
-if(btnFilter){
-    btnFilter.addEventListener('click', function(e){
-        ctnFilter.classList.toggle('active');
-        ctnFilter.classList.toggle('box');
-        if(ctnFilter.classList.contains('active')){
-            ctnFilter.innerHTML = temp;
-        }
-        else{
-            ctnFilter.innerHTML = '';
-        }
-    })
-}

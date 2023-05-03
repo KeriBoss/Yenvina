@@ -246,7 +246,7 @@
                                 </div>
                                 <div class="col-lg-5">
                                     <div class="info-top">
-                                        <form action="" method="post">
+                                        <form action="./cart.html">
                                             <div class="group-form prices">
                                                 <input type="number" name="price" value="212000000" hidden />
                                                 <input type="number" value="2120000" hidden />
@@ -269,13 +269,13 @@
                                                 <label for="choose4">mix nhieu loại gia vị</label>
                                             </div>
                                             <div class="range">
-                                                <input type="button" class="lowest" value="-" />
-                                                <input type="text" name="quantity" value="1" />
-                                                <input type="button" class="highest" value="+" />
+                                                <input type="button" class="lowest_quan" value="-" />
+                                                <input type="text" class="main_quan" name="quantity" value="1" />
+                                                <input type="button" class="highest_quan" value="+" />
                                             </div>
                                             <div class="group-form submit">
-                                                <button type="submit"><a class="cl-white" href="./cart.html">Thêm vào giỏ</a></button>
-                                                <button type="submit"><a class="cl-white" href="./payment.html">Mua ngay</a></button>
+                                                <button type="submit">Thêm vào giỏ</button>
+                                                <button><a class="cl-white" href="./payment.html">Mua ngay</a></button>
                                             </div>
                                         </form>
                                     </div>
@@ -987,6 +987,7 @@
             </div>
         </footer>
         <!-- Footer End -->
+
     </div>
 
     <!-- JavaScript Libraries -->
@@ -1011,9 +1012,9 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <!-- Template Javascript -->
-    <script src="./js/mainJquery.js"></script>
     <script src="js/main.js"></script>
     <script src="./js/script.js"></script>
+    <script src="./js/mainJquery.js"></script>
     <script>
        var splide = new Splide( '#main-slider', {
         pagination: false,
