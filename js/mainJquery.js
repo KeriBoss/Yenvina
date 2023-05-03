@@ -87,13 +87,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-
-
-
-
-
-
-
 var splide = new Splide( '.customer-splide', {
     perPage: 3,
     gap: 20,
@@ -114,38 +107,35 @@ var splide = new Splide( '.customer-splide', {
 splide.mount();
 
 //Slider for Detail page
-var splide = new Splide("#main-slider", {
-    width: 550,
-    height: 500,
+
+var splide = new Splide( '#main-slider', {
     pagination: false,
-    cover: true
-});
+    } );
 
-var thumbnails = document.getElementsByClassName("thumbnail");
-var current;
+    var thumbnails = document.getElementsByClassName( 'thumbnail' );
+    var current;
 
-for (var i = 0; i < thumbnails.length; i++) {
-    initThumbnail(thumbnails[i], i);
-}
+    for ( var i = 0; i < thumbnails.length; i++ ) {
+    initThumbnail( thumbnails[ i ], i );
+    }
 
-function initThumbnail(thumbnail, index) {
-    thumbnail.addEventListener("click", function () {
-        splide.go(index);
-    });
-}
+    function initThumbnail( thumbnail, index ) {
+    thumbnail.addEventListener( 'click', function () {
+        splide.go( index );
+    } );
+    }
 
-splide.on("mounted move", function () {
-    var thumbnail = thumbnails[splide.index];
+    splide.on( 'mounted move', function () {
+    var thumbnail = thumbnails[ splide.index ];
 
-    if (thumbnail) {
-        if (current) {
-            current.classList.remove("is-active");
+    if ( thumbnail ) {
+        if ( current ) {
+        current.classList.remove( 'is-active' );
         }
 
-        thumbnail.classList.add("is-active");
+        thumbnail.classList.add( 'is-active' );
         current = thumbnail;
     }
-});
+    } );
 
 splide.mount();
-

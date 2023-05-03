@@ -210,19 +210,18 @@
                                         <div class="splide__track">
                                             <ul class="splide__list">
                                                 <li class="splide__slide">
-                                                    <img src="https://source.unsplash.com/random/1000x1000?sig=1"
+                                                    <img class="img-fluid" src="https://source.unsplash.com/random/1000x1000?sig=1"
                                                         alt="" />
                                                 </li>
                                                 <li class="splide__slide">
-                                                    <img src="https://source.unsplash.com/random/1000x1000?sig=2"
+                                                    <img src="https://thumbs.dreamstime.com/b/beautiful-rain-forest-ang-ka-nature-trail-doi-inthanon-national-park-thailand-36703721.jpg" alt="" />
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <img class="img-fluid" src="https://source.unsplash.com/random/1000x1000?sig=3"
                                                         alt="" />
                                                 </li>
                                                 <li class="splide__slide">
-                                                    <img src="https://source.unsplash.com/random/1000x1000?sig=3"
-                                                        alt="" />
-                                                </li>
-                                                <li class="splide__slide">
-                                                    <img src="https://source.unsplash.com/random/1000x1000?sig=4"
+                                                    <img class="img-fluid" src="https://source.unsplash.com/random/1000x1000?sig=4"
                                                         alt="" />
                                                 </li>
                                             </ul>
@@ -234,7 +233,7 @@
                                             <img src="https://source.unsplash.com/random/1000x1000?sig=1" alt="" />
                                         </li>
                                         <li class="thumbnail">
-                                            <img src="https://source.unsplash.com/random/1000x1000?sig=2" alt="" />
+                                            <img src="https://thumbs.dreamstime.com/b/beautiful-rain-forest-ang-ka-nature-trail-doi-inthanon-national-park-thailand-36703721.jpg" alt="" />
                                         </li>
                                         <li class="thumbnail">
                                             <img src="https://source.unsplash.com/random/1000x1000?sig=3" alt="" />
@@ -243,6 +242,7 @@
                                             <img src="https://source.unsplash.com/random/1000x1000?sig=4" alt="" />
                                         </li>
                                     </ul>
+                                    
                                 </div>
                                 <div class="col-lg-5">
                                     <div class="info-top">
@@ -1011,9 +1011,63 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <!-- Template Javascript -->
+    <script src="./js/mainJquery.js"></script>
     <script src="js/main.js"></script>
     <script src="./js/script.js"></script>
-    <script src="./js/mainJquery.js"></script>
+    <script>
+       var splide = new Splide( '#main-slider', {
+        pagination: false,
+        } );
+
+        var thumbnails = document.getElementsByClassName( 'thumbnail' );
+        var current;
+
+        for ( var i = 0; i < thumbnails.length; i++ ) {
+        initThumbnail( thumbnails[ i ], i );
+        }
+
+        function initThumbnail( thumbnail, index ) {
+        thumbnail.addEventListener( 'click', function () {
+            splide.go( index );
+        } );
+        }
+
+        splide.on( 'mounted move', function () {
+        var thumbnail = thumbnails[ splide.index ];
+
+        if ( thumbnail ) {
+            if ( current ) {
+            current.classList.remove( 'is-active' );
+            }
+
+            thumbnail.classList.add( 'is-active' );
+            current = thumbnail;
+        }
+        } );
+
+splide.mount();
+    </script>
+    <script>
+        let navtabs = document.querySelectorAll('.information .sliderTab');
+        navtabs.forEach(item => {
+            item.addEventListener('click', function(event){
+                if(event.target.classList.contains('nav-item')){
+                    let lastActive = item.querySelector('li.active');
+                    let newActive = event.target;
+                    let bgActive = item.querySelector('.bg-active');
+        
+                    lastActive.classList.remove('active');
+                    newActive.classList.add('active');
+                    bgActive.style.left = newActive.offsetLeft + 'px';
+        
+                    let lastContentActive = item.querySelector('.tab.active');
+                    let newContentActive = document.getElementById(newActive.dataset.target);
+                    lastContentActive.classList.remove('active');
+                    newContentActive.classList.add('active');
+                }
+            })
+        })
+    </script>
 </body>
 
 </html>
