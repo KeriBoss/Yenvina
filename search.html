@@ -502,12 +502,10 @@
                         </div>
                     </div>
                     <!--Paging end-->
+                </div>
+            </div>
         </section>
         <!-- Product end -->
-    </div>
-    </div>
-    </section>
-    <!-- Login end-->
 
 
     <!-- Footer Start -->
@@ -654,8 +652,93 @@
         </div>
     </footer>
     <!-- Footer End -->
-
-    </div>
+        <!-- Modal -->
+        <div class="modal fade" id="popupAddCart" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true">
+            <div class="modal-dialog model-wh modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-center" id="exampleModalLongTitle">
+                            Gio hang hien co ( <span>1</span> )san pham
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Thumbnail</th>
+                                    <th scope="col">Product</th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col">Quantity</th>
+                                    <th scope="col">Money</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th class="mb-shown" scope="row">1</th>
+                                    <td>
+                                        <img width="70" height="70" src="./img/carousel-yenvina-1.png" alt="">
+                                    </td>
+                                    <td class="mb-shown-sm">
+                                        <p><b class="bold">To yen tinh che Vip loai 1</b></p>
+                                        <p>Phien ban: 50gram</p>
+                                        <p>Thuong hieu yen thuong dinh</p>
+                                    </td>
+                                    <td>
+                                        <p><b class="bold">2,999,000d</b></p>
+                                        <p><span class="price-old">3.190.000d</span></p>
+                                        <p><span class="sale">-9%</span></p>
+                                    </td>
+                                    <td>
+                                        <div class="range">
+                                            <input type="button" class="lowest_quan" value="-" />
+                                            <input type="text" class="main_quan" name="quantity" value="1" />
+                                            <input type="button" class="highest_quan" value="+" />
+                                        </div>
+                                    </td>
+                                    <td><b class="bold">2,999,000d</b></td>
+                                </tr>
+                                <tr>
+                                    <th class="mb-shown" scope="row">2</th>
+                                    <td>
+                                        <img width="70" height="70" src="./img/carousel-yenvina-1.png" alt="">
+                                    </td>
+                                    <td class="mb-shown">
+                                        <p><b>To yen tinh che Vip loai 1</b></p>
+                                        <p>Phien ban: 50gram</p>
+                                        <p>Thuong hieu yen thuong dinh</p>
+                                    </td>
+                                    <td>
+                                        <p><b>2,999,000d</b></p>
+                                        <p><span class="price-old">3.190.000d</span></p>
+                                        <p><span class="sale">-9%</span></p>
+                                    </td>
+                                    <td>
+                                        <div class="range">
+                                            <input type="button" class="lowest_quan" value="-" />
+                                            <input type="text" class="main_quan" name="quantity" value="1" />
+                                            <input type="button" class="highest_quan" value="+" />
+                                        </div>
+                                    </td>
+                                    <td><b>2,999,000d</b></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="price-final float-left"><span>39999999d</span></div>
+                        <div class="group">
+                            <a href="./cart.html" class="btn-tablink">Giỏ hàng</a>
+                            <a href="./payment.html" class="btn-tablink active">Thanh toán</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -669,6 +752,15 @@
     <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>

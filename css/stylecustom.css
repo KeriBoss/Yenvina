@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Pattaya&family=Poppins:ital,wght@0,100;0,400;0,500;1,400&display=swap');
 
 :root {
-    --bg-main: #1e3d37;
+    --bg-main: #83764F;
     --bg-note: #bbc4c3;
     --bg-gold: #d2c99c;
-    --bg-btn: #ecc785;
+    --bg-btn: #c4903b;
     --white: #ffffff;
     --black: #000000;
     --gray: #616c77;
@@ -12,6 +12,9 @@
     --yellow: #ecc785;
     --tx-note: #3b8576;
     --tx-blue: #7090bf;
+}
+body{
+    background: #efefef;
 }
 
 .cl-black{
@@ -327,6 +330,9 @@ header .nav-bar.active {
 footer {
     font-size: 20px;
     padding: 30px 0 0;
+    background: #fff;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.04);
+    margin-top: 30px;
 }
 
 footer h3 {
@@ -1091,7 +1097,8 @@ footer .footer-bottom .footer-wp a {
 /*-----------------------------------------------*/
 .breadcrumb {
     font-size: 20px;
-    padding: 15px 0;
+    padding: 5px 0px;
+    background: var(--white);
 }
 
 .breadcrumb .breadcrumb-shop {
@@ -1100,6 +1107,7 @@ footer .footer-bottom .footer-wp a {
     font-size: 0.8em;
     flex-wrap: wrap;
     text-align: left;
+    margin-bottom: 0;
 }
 
 .breadcrumb .breadcrumb-shop>li+li:before {
